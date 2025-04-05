@@ -34,7 +34,7 @@ env/
 .idea/
 
 # Model files
-*.h5
+# *.h5
 *.model
 
 # Uploaded files
