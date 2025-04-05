@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.splash-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-screen.fade-out {
+  transform: scale(1.2);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2c3e50;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.splash-screen.fade-out .App-header {
+  transform: scale(0.8);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-title {
+  font-size: 4rem;
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.splash-screen.fade-out .app-title {
+  transform: translateY(-20px);
+}
+
+.app-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #34495e;
+  font-weight: 400;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.splash-screen.fade-out .app-subtitle {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.main-app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-app.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.main-content {
+  padding-top: 80px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+.main-content p {
+  color: #34495e;
+  font-size: 1.2rem;
+  animation: slideIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
