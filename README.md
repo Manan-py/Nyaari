@@ -69,6 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-homw page seems like ![image](https://github.com/user-attachments/assets/e6942f35-3483-4688-b925-7dcf403a2b91)  and the services page is like ![image](https://github.com/user-attachments/assets/dc3a83af-e4a1-42a0-bb5c-0b859eada766)
+homw page seems like ![image](https://github.com/user-attachments/assets/e6942f35-3483-4688-b925-7dcf403a2b91)  and the services page is like ![image](https://github.com/user-attachments/assets/dc3a83af-e4a1-42a0-bb5c-0b859eada766) and the php form looks like ![image](https://github.com/user-attachments/assets/bfb84132-cc6f-4465-9110-2866ebade4f5)
+ 
 
 
